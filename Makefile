@@ -9,6 +9,7 @@ release:
 unstable:
 	rm hooks/install
 	sed 's/%%REPO%%/unstable/' hooks/install.pkg > hooks/install
+	chmod +x hooks/install
 
 dev: files/hockeypuck files/instroot.tar.gz files/debian.tar.gz
 	rm hooks/install

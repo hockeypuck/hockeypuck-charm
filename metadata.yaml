@@ -15,7 +15,7 @@ requires:
     optional: true
 provides:
   keyserver:
-    interface: hkp
+    interface: http
   peer:
     interface: recon
 peers:
