@@ -17,7 +17,7 @@ dev: files/hockeypuck files/instroot.tar.gz files/debian.tar.gz
 	chmod +x hooks/install
 
 files/hockeypuck:
-	go build -o $@ launchpad.net/hockeypuck/cmd/hockeypuck
+	go build -o $@ github.com/hockeypuck/hockeypuck/cmd/hockeypuck
 
 files/instroot.tar.gz:
 	cd ../../../instroot; tar cvf $(MAKEDIR)/files/instroot.tar .
@@ -29,6 +29,6 @@ files/debian.tar.gz:
 	gzip -9 files/debian.tar
 
 clean:
-	$(RM) files/hockeypuck files/instroot.tar.gz
+	$(RM) files/hockeypuck files/instroot.tar.gz files/debian.tar.gz
 
 .PHONY: all clean
