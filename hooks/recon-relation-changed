@@ -19,7 +19,7 @@ cat >/etc/hockeypuck/hockeypuck.conf.d/03-recon <<EOF
 reconPort=11370
 httpPort=11371
 partners=["$PARTNERS"]
-filters=["yminsky.dedup"]
+filters=["yminsky.dedup", "yminsky.merge"]
 
 EOF
 
